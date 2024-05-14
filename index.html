@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tarot</title>
+		<link rel="stylesheet" href="./CSS/reset.css" />
+		<link rel="stylesheet" href="./CSS/style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,800;1,300;1,500&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="overlay">
+			<div class="loader"></div>
+		</div>
+
+		<section class="section">
+			<div class="section__inner">
+				<header class="header">
+					<div class="header__wrapper">
+						<h1 class="header__logo">เมอซู • อ่านคำทำนายไพ่ทาโรต์ฟรี</h1>
+						<div class="header__img">
+							<img src="./image/amigos-2024747_640.png" alt="astrological" />
+						</div>
+					</div>
+				</header>
+
+				<main class="main">
+					<div class="main__inner">
+						<div class="content__text">
+							<p class="content__elem">
+								ฉันชื่อ เมอซู ผู้มีสัมผัสพิเศษและคนอ่านไพ่ทาโรต์รุ่นที่ห้า ใครๆ
+								ต่างก็อยากรู้แน่ชัดถึงสิ่งที่จะเกิดขึ้นและไพ่ทาโรต์จะให้คำตอบสำหรับทุกคำถามไม่ว่าจะเป็นอดีต
+								ปัจจุบันหรืออนาคต ทั้งคำแนะนำและคำเตือน...
+								นี่จึงเป็นเหตุผลที่ฉันอ่านไพ่ทาโรต์ให้แก่ทุกคนแบบไม่คิดเงิน!
+								นี่เป็นภารกิจของฉันในการช่วยผู้ที่กำลังเดือดร้อน
+							</p>
+							<p class="content__elem">
+								วิธีการของฉันก็คือการแบ่งปันประสบการณ์ในเชิงบวกที่เต็มไปด้วยความหมายและความเข้าใจกับแต่ละคน
+								ฉันมีความสุขมากที่ได้ช่วยเหลือพวกคุณ!
+								ฉันจะก้าวเดินไปกับคุณและส่งต่อข้อความจากอดีตและอนาคต
+								รวมถึงแนวทาง
+								เพื่อช่วยให้คุณประสบความสำเร็จตามเป้าหมายที่คุณวางไว้!
+								เลือกไพ่สามใบ
+							</p>
+							<p class="content__elem">
+								รวมถึงแนวทาง
+								เพื่อช่วยให้คุณประสบความสำเร็จตามเป้าหมายที่คุณวางไว้!
+								เลือกไพ่สามใบรวมถึงแนวทาง
+								เพื่อช่วยให้คุณประสบความสำเร็จตามเป้าหมายที่คุณวางไว้!
+								เลือกไพ่สามใบ
+							</p>
+							<p class="content__elem">
+								ฉันก็คือการแบ่งปันประสบการณ์ในเชิงบวกที่เต็มไปด้วยความหมายและความเข้าใจกับแต่ละคน
+								ฉันมีความสุขมากที่ได้ช่วยเหลือพวกคุณ!
+							</p>
+						</div>
+
+						<button class="button__shuffle" id="shuffleButton">Shuffle</button>
+
+						<div class="cards__container" id="cardContainer">
+							<div class="card">
+								<div class="card__inner">
+									<div class="card__front">
+										<img
+											src="./image/—Pngtree—mysterious six-pointed star pattern hand-painted_6522789.png"
+											alt="Cart 1"
+										/>
+									</div>
+									<div class="card__back">
+										<img
+											src="./image/tarot_card_xiii___death_by_dinmoney_da39iy2-fullview.png"
+											alt="Cart 1"
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__inner">
+									<div class="card__front">
+										<img
+											src="./image/—Pngtree—mysterious six-pointed star pattern hand-painted_6522789.png"
+											alt="Cart 2"
+										/>
+									</div>
+									<div class="card__back">
+										<img
+											src="./image/dcrex0c-b7383c55-0b17-4017-a28d-4d55799e2642.jpg"
+											alt="Cart 2"
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__inner">
+									<div class="card__front">
+										<img
+											src="./image/—Pngtree—mysterious six-pointed star pattern hand-painted_6522789.png"
+											alt="Cart 3"
+										/>
+									</div>
+									<div class="card__back">
+										<img
+											src="./image/dcqtnk8-594660d3-7f5c-4f60-ad94-619ffe7fbbc1.jpg"
+											alt="Cart 3"
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__inner">
+									<div class="card__front">
+										<img
+											src="./image/—Pngtree—mysterious six-pointed star pattern hand-painted_6522789.png"
+											alt="Cart 4"
+										/>
+									</div>
+									<div class="card__back">
+										<img
+											src="./image/dcpo3ln-13f92899-84d8-47e7-aef2-54470b321c2e.jpg"
+											alt="Cart 4"
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__inner">
+									<div class="card__front">
+										<img
+											src="./image/—Pngtree—mysterious six-pointed star pattern hand-painted_6522789.png"
+											alt="Cart 5"
+										/>
+									</div>
+									<div class="card__back">
+										<img
+											src="./image/dcp3796-706e0d35-8d66-4567-90a9-f063c9cb53b8.jpg"
+											alt="Cart 5"
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__inner">
+									<div class="card__front">
+										<img
+											src="./image/—Pngtree—mysterious six-pointed star pattern hand-painted_6522789.png"
+											alt="Cart 6"
+										/>
+									</div>
+									<div class="card__back">
+										<img
+											src="./image/dbbgpmy-a74b2508-5939-4677-853f-201cf5f0ae5a.jpg"
+											alt="Cart 6"
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__inner">
+									<div class="card__front">
+										<img
+											src="./image/—Pngtree—mysterious six-pointed star pattern hand-painted_6522789.png"
+											alt="Cart 7"
+										/>
+									</div>
+									<div class="card__back">
+										<img
+											src="./image/dcq8hrj-1db43b58-b61b-4202-976e-3e3e0b520271.jpg"
+											alt="Cart 7"
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__inner">
+									<div class="card__front">
+										<img
+											src="./image/—Pngtree—mysterious six-pointed star pattern hand-painted_6522789.png"
+											alt="Cart 8"
+										/>
+									</div>
+									<div class="card__back">
+										<img
+											src="./image/dcsjkop-a1ce83be-e113-41c6-b13a-dd79453fb955.jpg"
+											alt="Cart 8"
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__inner">
+									<div class="card__front">
+										<img
+											src="./image/—Pngtree—mysterious six-pointed star pattern hand-painted_6522789.png"
+											alt="Cart 9"
+										/>
+									</div>
+									<div class="card__back">
+										<img
+											src="./image/dct4277-f7a2fe07-8d01-4302-b709-ef5fd43586a3.jpg"
+											alt="Cart 9"
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__inner">
+									<div class="card__front">
+										<img
+											src="./image/—Pngtree—mysterious six-pointed star pattern hand-painted_6522789.png"
+											alt="Cart 10"
+										/>
+									</div>
+									<div class="card__back">
+										<img
+											src="./image/ddhfc00-d589b515-576d-486e-ac5f-0453b5f3acc3.jpg"
+											alt="Cart 10"
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__inner">
+									<div class="card__front">
+										<img
+											src="./image/—Pngtree—mysterious six-pointed star pattern hand-painted_6522789.png"
+											alt="Cart 11"
+										/>
+									</div>
+									<div class="card__back">
+										<img
+											src="./image/d9hzofz-cf29bf0f-5b55-4ccd-a608-423429389485.jpg"
+											alt="Cart 11"
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__inner">
+									<div class="card__front">
+										<img
+											src="./image/—Pngtree—mysterious six-pointed star pattern hand-painted_6522789.png"
+											alt="Cart 12"
+										/>
+									</div>
+									<div class="card__back">
+										<img
+											src="./image/dac8frq-02567f89-4551-4dc5-9307-095b1cab77de.jpg"
+											alt="Cart 12"
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__inner">
+									<div class="card__front">
+										<img
+											src="./image/—Pngtree—mysterious six-pointed star pattern hand-painted_6522789.png"
+											alt="Cart 13"
+										/>
+									</div>
+									<div class="card__back">
+										<img
+											src="./image/da02m1u-1e460c56-6c2c-4618-a793-4fa694114783.jpg"
+											alt="Cart 13"
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__inner">
+									<div class="card__front">
+										<img
+											src="./image/—Pngtree—mysterious six-pointed star pattern hand-painted_6522789.png"
+											alt="Cart 14"
+										/>
+									</div>
+									<div class="card__back">
+										<img
+											src="./image/daz6pqk-bd5ae3b5-8e31-4e01-a3bf-eebdc0cbbbc9.png"
+											alt="Cart 14"
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__inner">
+									<div class="card__front">
+										<img
+											src="./image/—Pngtree—mysterious six-pointed star pattern hand-painted_6522789.png"
+											alt="Cart 15"
+										/>
+									</div>
+									<div class="card__back">
+										<img
+											src="./image/d91kcnc-07a1cd95-5113-48f4-9337-4651796888cb.jpg"
+											alt="Cart 15"
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__inner">
+									<div class="card__front">
+										<img
+											src="./image/—Pngtree—mysterious six-pointed star pattern hand-painted_6522789.png"
+											alt="Cart 16"
+										/>
+									</div>
+									<div class="card__back">
+										<img
+											src="./image/magician_by_lenkasimeckova_d7u2tci-375w-2x.jpg"
+											alt="Cart 16"
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__inner">
+									<div class="card__front">
+										<img
+											src="./image/—Pngtree—mysterious six-pointed star pattern hand-painted_6522789.png"
+											alt="Cart 17"
+										/>
+									</div>
+									<div class="card__back">
+										<img
+											src="./image/dazikbg-5907e814-e5c6-4e92-9b5d-c256f30e25f6.jpg"
+											alt="Cart 17"
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__inner">
+									<div class="card__front">
+										<img
+											src="./image/—Pngtree—mysterious six-pointed star pattern hand-painted_6522789.png"
+											alt="Cart 18"
+										/>
+									</div>
+									<div class="card__back">
+										<img
+											src="./image/ddiwn98-8c96bc28-a629-460c-b72e-466ba2fb1949.jpg"
+											alt="Cart 18"
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__inner">
+									<div class="card__front">
+										<img
+											src="./image/—Pngtree—mysterious six-pointed star pattern hand-painted_6522789.png"
+											alt="Cart 19"
+										/>
+									</div>
+									<div class="card__back">
+										<img
+											src="./image/tarot__six_of_swords_by_squonkhunter_deky9vi-fullview.jpg"
+											alt="Cart 19"
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__inner">
+									<div class="card__front">
+										<img
+											src="./image/—Pngtree—mysterious six-pointed star pattern hand-painted_6522789.png"
+											alt="Cart 20"
+										/>
+									</div>
+									<div class="card__back">
+										<img
+											src="./image/major_arcana__11__justice_by_squonkhunter_dd6lsf3-fullview.jpg"
+											alt="Cart 20"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</main>
+
+				<footer class="footer">
+					<div class="footer__inner">
+						<img src="./image/zodiac-5921179_640.png" alt="#" />
+
+						<h2 class="footer__logo">เมอซู • อ่านคำทำนายไพ่ทาโรต์ฟรี</h2>
+						<p class="footer__text">
+							สงวนลิขสิทธิ์ ห้ามทำซ้ำ แจกจ่าย หรือส่งในรูปแบบใด ๆ
+							หรือด้วยวิธีการใด ๆ รวมถึงการทำสำเนา บันทึก
+							หรือวิธีการทางอิเล็กทรอนิกส์หรือเชิงกลอื่น ๆ
+							โดยไม่ได้รับอนุญาตเป็นลายลักษณ์อักษรจากผู้เผยแพร่
+							ยกเว้นในกรณีที่มีการอ้างอิงโดยย่อในรีวิวสำคัญและการใช้งานที่ไม่ใช่เชิงพาณิชย์อื่น
+							ๆ ที่ได้รับอนุญาตตามกฎหมายลิขสิทธิ์
+						</p>
+						<div class="footer__firm">
+							©Copyright 2020-2021. All Rights Reserved.
+						</div>
+					</div>
+				</footer>
+			</div>
+		</section>
+
+		<script src="script.js"></script>
+	</body>
+</html>

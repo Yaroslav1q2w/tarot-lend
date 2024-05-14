@@ -1,0 +1,303 @@
+* {
+	font-family: "Montserrat", sans-serif;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: opacity 1s ease-in-out;
+	opacity: 1;
+	pointer-events: none;
+}
+
+.loader {
+	width: 140px;
+	height: 140px;
+	background-image: url("../image/d4kod97-372c2ceb-a1bf-444b-85b1-e5e47b45d397.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	animation: spin 3s linear infinite, fadeOut 1s 1s forwards;
+}
+
+@keyframes spin {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0.1);
+	}
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.section {
+	background-image: url("../image/1646950459_2-kartinkin-net-p-astrologiya-krasivie-kartinki-2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.header {
+	max-width: 760px;
+	margin: 0 auto;
+}
+.header__wrapper {
+	font-size: 36px;
+	color: #cdc5c5;
+	padding-left: 30px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 30px 20px;
+	gap: 10px;
+	font-weight: 700;
+}
+
+.header__img img {
+	height: 160px;
+}
+
+@media screen and (max-width: 920px) {
+	.header__wrapper {
+		font-size: 26px;
+		padding: 20px 10px;
+		gap: 6px;
+		font-weight: 700;
+	}
+}
+@media screen and (max-width: 640px) {
+	.header__wrapper {
+		padding: 10px;
+		font-size: 22px;
+		gap: 2px;
+		font-weight: 600;
+	}
+
+	.header__img img {
+		height: 120px;
+	}
+}
+
+.main {
+	margin-top: 40px;
+	padding: 20px;
+}
+.main__inner {
+	background-color: rgba(91, 121, 190, 0.8);
+	box-shadow: 0 0px 40px rgba(0, 0, 0, 1);
+	border-radius: 20px;
+	padding: 16px;
+	max-width: 740px;
+	margin: 0 auto;
+}
+
+.content__text {
+	font-size: 18px;
+	margin-top: 10px;
+	font-style: italic;
+	color: #fff;
+	padding: 40px 0 30px;
+	border-bottom: 2mm ridge #94a3cd;
+	margin-bottom: 30px;
+}
+
+.content__elem {
+	padding-top: 20px;
+}
+
+.button__shuffle {
+	font-style: normal;
+	width: 140px;
+	height: 35px;
+	color: rgb(250, 250, 250);
+	background: linear-gradient(to left, #212d56, #1f52cb);
+	border: 0px;
+	border-radius: 10px;
+	outline: none;
+	margin: 6px;
+	cursor: pointer;
+	transition: all 0.5s ease 0s;
+	font-weight: 600;
+	margin-left: 10px;
+}
+
+.button__shuffle:hover {
+	box-shadow: 4px -4px 30px #100c0c;
+	transform: translateY(3px);
+}
+
+.button__shuffle:active {
+	transform: translateY(0);
+	box-shadow: none;
+}
+
+@media screen and (max-width: 920px) {
+	.content__text {
+		font-size: 15px;
+		padding: 20px 0;
+		margin-bottom: 30px;
+	}
+
+	.button__shuffle {
+		width: 140px;
+		height: 35px;
+	}
+}
+@media screen and (max-width: 640px) {
+	.content__text {
+		font-size: 12px;
+		padding: 20px 0;
+		margin-bottom: 30px;
+	}
+
+	.content__elem {
+		padding-top: 10px;
+	}
+
+	.button__shuffle {
+		width: 110px;
+		height: 30px;
+		font-size: 12px;
+	}
+}
+
+.cards__container {
+	padding: 40px 60px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.card {
+	width: 80px;
+	height: 100px;
+	transition: transform 0.5s ease;
+	perspective: 1000px;
+	border-radius: 40px;
+}
+
+.card:hover {
+	transform: translateY(-14px);
+}
+
+.card img {
+	height: 100%;
+	width: 100%;
+}
+
+.card__inner {
+	width: 100%;
+	height: 100%;
+	transition: transform 0.5s ease;
+	transform-style: preserve-3d;
+}
+.card__front {
+	cursor: pointer;
+}
+.card__back {
+	width: 48px;
+	height: 80px;
+	backface-visibility: hidden;
+	left: 16px;
+	position: absolute;
+	transform: rotateY(180deg);
+	background-color: #fff;
+	top: 3px;
+	border-radius: 10px;
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+	cursor: pointer;
+}
+
+.card__back img {
+	border-radius: 5px;
+}
+
+.card.flipped .card__inner {
+	transform: rotateY(180deg);
+}
+
+.card.flipped .card__back {
+	display: block;
+}
+
+@media screen and (max-width: 920px) {
+	.cards__container {
+		padding: 40px 0 0;
+	}
+
+	.card {
+		width: 70px;
+	}
+}
+@media screen and (max-width: 640px) {
+	.card {
+		width: 70px;
+	}
+}
+
+.footer {
+	margin-top: 40px;
+	background-color: rgb(60, 73, 103, 0.9);
+	box-shadow: 0 0px 100px rgba(0, 0, 0);
+}
+.footer__inner {
+	flex-wrap: wrap;
+	padding: 30px;
+	max-width: 920px;
+	display: flex;
+	margin: 0 auto;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+}
+
+.footer__inner img {
+	height: 90px;
+}
+
+.footer__logo {
+	font-size: 24px;
+	color: #dbccb3;
+	font-weight: 700;
+}
+.footer__text {
+	text-align: center;
+	color: #fff;
+	letter-spacing: 2.5px;
+	word-spacing: 1px;
+	font-size: 14px;
+}
+.footer__firm {
+	padding-top: 10px;
+	color: #fff;
+	font-size: 16px;
+	border-top: 2px solid #94a3cd;
+	line-height: 2;
+}
+
+@media screen and (max-width: 920px) {
+	.footer__logo {
+		font-size: 20px;
+	}
+	.footer__text {
+		font-size: 12px;
+	}
+	.footer__firm {
+		font-size: 12px;
+		border-top: 2px solid #94a3cd;
+	}
+}
